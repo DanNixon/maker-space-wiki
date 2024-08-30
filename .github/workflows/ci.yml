@@ -16,6 +16,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Download mdBook
+        run: |
+          set +x
+
+          version="v0.4.40"
+
+          cd /tmp
+          archive="mdbook-v0.4.40-x86_64-unknown-linux-gnu.tar.gz"
+          wget "https://github.com/rust-lang/mdBook/releases/download/v0.4.40/${archive}"
+          tar xzvf "${archive}"
+          mv mdbook /usr/bin
+
+          mdbook --version
+
       - name: Build
         run: mdbook build
 
