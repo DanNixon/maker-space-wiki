@@ -6,7 +6,7 @@ Essentially keep on doing what we currently are, but perhaps with a bit of a pus
 
 Pros:
 
-- Low-sih effort
+- Low-ish effort
 - The devil you know
 
 Cons:
