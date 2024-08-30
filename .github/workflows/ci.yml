@@ -26,7 +26,7 @@ jobs:
           archive="mdbook-v0.4.40-x86_64-unknown-linux-gnu.tar.gz"
           wget "https://github.com/rust-lang/mdBook/releases/download/v0.4.40/${archive}"
           tar xzvf "${archive}"
-          mv mdbook /usr/bin
+          sudo mv mdbook /usr/bin
 
           mdbook --version
 
