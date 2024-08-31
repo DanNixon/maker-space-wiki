@@ -1,6 +1,6 @@
 # Bambu Lab P1S
 
-A [Bambu Lab P1S](https://bambulab.com/en-gb/p1?product=p1s) with AMS and external spool caddy.
+[Bambu Lab P1S](https://bambulab.com/en-gb/p1?product=p1s) with AMS and external spool caddy.
 A very good, quick FDM 3D printer.
 
 ## Essential Information
