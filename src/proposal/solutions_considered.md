@@ -1,5 +1,7 @@
 # Solutions Considered
 
+Here is a brief overview of the things that have been considered before arriving at the [proposed solution](./proposed_solution/).
+
 ## Continue using PBworks and just update the content
 
 Essentially keep on doing what we currently are, but perhaps with a bit of a push to keep the documentation up to date.

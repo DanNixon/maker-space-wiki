@@ -4,9 +4,5 @@ This section outlines the proposal to replace our [existing wiki](http://makersp
 
 - [Problem Statement](./problem_statement.md): outlining what is wrong with the current wiki and why we need a replacement
 - [Solutions Considered](./solutions_considered.md): an overview of each considered solution that could address the issues with the current wiki
-- Proposed solution
-    - Overview
-    - Technical details
-    - Editing workflow
-    - Implementation plan
-- Hypothetically Asked Questions
+- [Proposed Solution](./proposed_solution/): what I am actually suggesting we do about it
+- [Hypothetically Asked Questions](./hypothetically_asked_questions.md): questions that I imagine people might have
