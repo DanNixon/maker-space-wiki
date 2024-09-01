@@ -35,7 +35,6 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
-        if: github.ref_name == 'main'
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: e532cde53d2aaf233bc8f913f31a325f
