@@ -45,6 +45,50 @@ If there is a need for a quick revert to an older version, then this can be done
 
 ## History
 
-Deployments to Cloudflare Pages are reported in GitHub as deployments, and the previous versions of the site are available to browse if desired (see for this wiki [here](https://github.com/DanNixon/maker-space-wiki/deployments)).
+A link to the specific Cloudflare Pages deployment can be found in the GitHub Actions logs for the specific commit, selected via the green tick next to a commit on the GitHub website.
+e.g. click the green tick on [commit](https://github.com/DanNixon/maker-space-wiki/commit/270333e4d4b3c0fb611336801446630151f08546), then details to get to [actions logs](https://github.com/DanNixon/maker-space-wiki/actions/runs/10653671421/job/29529029806) and the link is shown in the logs for the "Publish to Cloudflare Pages" step under "Running Wrangler Commands".
+In future this may be easier when the appropriate GitHub Action for Cloudflare Wrangler interact with GitHub Deployments.
 
 The history of the source files can be viewed, managed and manipulated via all the standard Git methods if the need to do so should arise.
+
+## Specific settings/configurations
+
+Here are some specific and/or low level settings that will be used.
+
+### GitHub
+
+#### General Pull Request settings
+
+- "Allow merge commits" - uncheck
+- "Allow squash merging" - check
+    - "Default commit message" - "Pull request title and description"
+- "Allow rebase merging" - uncheck
+- "Automatically delete head branches" - check
+
+#### Branch ruleset for `main`:
+
+- "Restrict deletions"
+- "Require linear history"
+- "Require a pull request before merging"
+    - "Dismiss stale pull request approvals when new commits are pushed"
+- "Require status checks to pass"
+- "Block force pushes"
+
+This forces all changes to be made via a Pull Request, ensuring that commits that may break the site build cannot be pushed directly to `main`.
+If we ever did want to require approval in the future, this is the place one would configure it.
+
+#### Actions permissions
+
+- "Fork pull request workflows from outside collaborators" - "Require approval for all outside collaborators"
+
+This ensures that actions will not run (unless manually allowed) on any Pull Request from a GitHub user who is not part of the MakerSpaceNewcastle.
+This is done to protect the Cloudflare API token.
+
+It is the intention that members with a GitHub account are members of the MakerSpaceNewcastle GitHub organisation, so this should not be a common issue.
+
+### Cloudflare
+
+DNS: `CNAME wiki makerspace-wiki.pages.dev`.
+
+Assuming the Pages project is called `makerspace-wiki`, this will result in the wiki being availale at `wiki.makerspace.org.uk`.
+This is actually handled automatically by Cloudflare following the custom domain config in Pages, it is just here for the sake of completeness.
