@@ -6,7 +6,9 @@ on:
   pull_request:
 
 jobs:
-  book:
+  build_and_publish:
+    name: Build and Publish
+
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -41,12 +43,7 @@ jobs:
           accountId: e532cde53d2aaf233bc8f913f31a325f
           command: pages deploy book --project-name=ms-wiki-test
 
-      - name: View context attributes
-        uses: actions/github-script@v7
-        with:
-          script: console.log(context)
-
-      - name: Add preview comment to PR
+      - name: Add preview comment to Pull Request
         if: github.event_name == 'pull_request'
         uses: actions/github-script@v7
         with:
