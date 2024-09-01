@@ -1,4 +1,6 @@
-## Workshop
+# Workshop
+
+## Main room
 
 ### 3D Printers
 - No training but ask for help if you need it.  Follow the QR code for the Bambu.
@@ -34,6 +36,8 @@
 - Coffee machine - used for hot water instead of a kettle.
 - Bin bags - on shelves.
 - Tea/biscuits/sweets etc often on the table - help yourself - feel free to add more
+
+
 ### Fridge
 - Lemonade/Irn Bru - Free but please replenish what you use.
 - Club Mate - Prices/Payment details on the fridge.
