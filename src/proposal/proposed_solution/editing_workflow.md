@@ -40,4 +40,4 @@ When happy the PR is merged, an Action runs and the live wiki is updated.
 ## Demo
 
 The site you are reading now is effectively identical in infastructure/deployment to the proposed solution.
-Therefore feel feel to have a play around, try making some changes (things will not be as smooth as eventually intended as anyone I have not already added to the repo will need to have Actions on Pull Requests manually started).
+Therefore feel free to have a play around, try making some changes (things will not be as smooth as eventually intended as anyone I have not already added to the repo will need to have Actions on Pull Requests manually started).
