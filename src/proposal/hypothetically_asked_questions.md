@@ -3,12 +3,12 @@
 ## Isn't needing to use GitHub adding a barrier to entry for editing the wiki?
 
 Yes.
-
 However, it is, in my view, a very small one.
 
 Given that the process for editing can be done entirely via the browser and will be sufficiently documented, I do not see that it will be substantially worse than any other platform.
+As a last resort, it would also be possible for a member to make edits on behalf of another member.
 
-Should it be required, it would also be possible for a member to make edits on behalf of another member.
+The lack of ongoing maintenance, zero monetary expense, environmental benefits and security benefits of a static site position this as a trade-off worth making.
 
 ## Would this mean I need to create a GitHub account to edit the wiki?
 
