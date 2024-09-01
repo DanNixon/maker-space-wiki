@@ -8,4 +8,5 @@ Here you will find (hopefully) all the information you could possibly want to kn
 
 This is a demo wiki, if you are looking for the current wiki then head [here](https://makerspace.pbworks.com/).
 
-This contains the actual proposal to change from our existing wiki to something very like this as well as a couple of demo pages that were either quick to write, quick to migrate or generously donated as part of testing.
+This site contains the actual proposal to change from our existing wiki to something very like this as well as a couple of demo pages that were either quick to write, quick to migrate or generously donated as part of testing.
+If you came here from the mailing list, you likely want to start reading through [the proposal](./proposal/).
