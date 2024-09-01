@@ -41,7 +41,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: e532cde53d2aaf233bc8f913f31a325f
-          command: pages deploy book --project-name=ms-wiki-test
+          command: pages deploy out --project-name=ms-wiki-test
 
       - name: Add preview comment to Pull Request
         if: github.event_name == 'pull_request'
