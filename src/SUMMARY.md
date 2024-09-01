@@ -8,6 +8,7 @@
     - [Proposed Solution](./proposal/proposed_solution/README.md)
         - [Technical Details](./proposal/proposed_solution/technical_details.md)
         - [Editing Workflow](./proposal/proposed_solution/editing_workflow.md)
+        - [Implementation Plan](./proposal/proposed_solution/implementation_plan.md)
     - [Hypothetically Asked Questions](./proposal/hypothetically_asked_questions.md)
 - [Equipment](./equipment/README.md)
     - [Laser Cutter](./equipment/laser_cutter/README.md)

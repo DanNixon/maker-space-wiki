@@ -29,3 +29,5 @@ It depends, do you...
 
 - [care about how this actually works?](./technical_details.md), or
 - [just want to know how you would edit the wiki?](./editing_workflow.md)
+
+You may also be interested in the [implementation plan](./implementation_plan.md).
