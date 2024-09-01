@@ -7,5 +7,9 @@ multilingual = false
 
 src = "src"
 
-[output.html.fold]
-enable = true
+[build]
+build-dir = "out"
+create-missing = false
+
+[output.html]
+fold.enable = true
