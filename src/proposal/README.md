@@ -10,3 +10,7 @@ This section outlines the proposal to replace our [existing wiki](http://makersp
 ## Feedback
 
 I welcome all feedback, but am particularly interested in hearing from wiki authors (both present and potential), given that they are the ones for whom there is a trade-off in the proposed solution, namely the slightly more complex edit/contribution workflow.
+
+If anything is unclear, given me a shout and I'll add more details as required.
+Feel free to poke around the repository all you like, the link is to the top right of the page (the GitHub logo).
+If you are interested to see the Cloudflare side of it, give me a shout and I can show you how this looks on the dashboard (although I assure you, it is not that thrilling).
