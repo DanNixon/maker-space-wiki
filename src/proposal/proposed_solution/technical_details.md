@@ -32,6 +32,10 @@ The layout/content of the repository will be pretty much identical to the one th
 Changes will be made via a Pull Request, this is so that the site can be built to verify it is syntactically correct.
 Pull Requests can only be merged if the GitHub Action passes.
 
+Those wishing to edit the wiki should be members of the MakerSpaceNewcastle GitHub organisation.
+Otherwise the Action that runs on Pull Request's will fail to generate the preview due to not having access to the Cloudflare API key.
+It is still possible for a PR to be made from unknown GitHub users or from forks, but no preview will be generated.
+
 We may choose to use this as a means of having another member review the contents, or have ownership of documents (e.g. Iain might own the membership and induction related documents, and must approve changes to it), however I suggest this be something we do later if the need arises.
 
 Once a Pull Request is merged, a GitHub Action will build the site and publish it to Cloudflare Pages.
@@ -76,15 +80,6 @@ Here are some specific and/or low level settings that will be used.
 
 This forces all changes to be made via a Pull Request, ensuring that commits that may break the site build cannot be pushed directly to `main`.
 If we ever did want to require approval in the future, this is the place one would configure it.
-
-#### Actions permissions
-
-- "Fork pull request workflows from outside collaborators" - "Require approval for all outside collaborators"
-
-This ensures that actions will not run (unless manually allowed) on any Pull Request from a GitHub user who is not part of the MakerSpaceNewcastle.
-This is done to protect the Cloudflare API token.
-
-It is the intention that members with a GitHub account are members of the MakerSpaceNewcastle GitHub organisation, so this should not be a common issue.
 
 ### Cloudflare
 
